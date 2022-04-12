@@ -1,0 +1,213 @@
+
+<!-- HERO -->
+<section class="hero">
+  <div class="search">
+    <input type="text" class="searchTerm" placeholder="Find something delicious!">
+    <button type="submit" class="searchButton">
+      <i class="fa fa-search"></i>
+   </button>
+  </div>
+  </section>
+
+<!-- TOP CATEGORIES -->
+<section class="flexcont">
+
+    <div class="flex-article-topcat">
+      
+      
+      <img src="/assets/images/am.jpg" alt="" class="grid-img">
+      <a href="/american" class="nav-link">
+      <h2 class="split-article"> American </h2>
+    </a>
+    </div>
+    
+    <div class="flex-article-topcat">
+      <img src="/assets/images/am.jpg" alt="" class="grid-img">
+      <a href="/asian" class="nav-link">
+      <h2 class="split-article"> Asian </h2>
+    </a>
+    </div>
+    
+    <div class="flex-article-topcat">
+      <img src="/assets/images/am.jpg" alt="" class="grid-img">
+      <a href="/british" class="nav-link">
+      <h2 class="split-article"> British </h2>
+    </a>
+    </div>
+    
+    <div class="flex-article-topcat">
+      <img src="/assets/images/am.jpg" alt="" class="grid-img">
+      <a href="/chinese" class="nav-link">
+      <h2 class="split-article"> Chinese </h2>
+    </a>
+    </div>
+    
+    <div class="flex-article-topcat">
+      <img src="/assets/images/am.jpg" alt="" class="grid-img">
+      <a href="/french" class="nav-link">
+      <h2 class="split-article"> French </h2>
+    </a>
+    </div>
+    
+    <div class="flex-article-topcat">
+      <img src="/assets/images/am.jpg" alt="" class="grid-img">
+      <a class="nav-link" routerLink="indian"> 
+      <h2 class="split-article"> Indian </h2>
+    </a>
+    </div>
+    
+    <div class="flex-article-topcat">
+      <img src="/assets/images/am.jpg" alt="" class="grid-img">
+      <a class="nav-link" routerLink="snack"> 
+      <h2 class="split-article"> Italian </h2>
+    </a>
+    </div>
+    
+    <div class="flex-article-topcat">
+      <img src="/assets/images/am.jpg" alt="" class="grid-img">
+      <a class="nav-link" routerLink="Dessert"> 
+      <h2 class="split-article"> Japanese </h2>
+    </a>
+    </div>
+    
+    <div class="flex-article-topcat">
+      <img src="/assets/images/am.jpg" alt="" class="grid-img">
+      <a class="nav-link" routerLink="Mexican"> 
+      <h2 class="split-article"> Mexican </h2>
+    </a>
+    </div>
+    
+    <div class="flex-article-topcat">
+      <img src="/assets/images/am.jpg" alt="" class="grid-img">
+      <a class="nav-link" routerLink="Nordic"> 
+      <h2 class="split-article"> Nordic </h2>
+    </a>
+    </div>
+    </section>
+
+  
+<!-- BREAKFAST -->
+<section class="right-heading">
+  <h2 class="split-article cusine-header">Breakfast</h2>
+</section>
+
+<!-- Loop section -->
+<section class="breakfast">
+
+  <!-- Loop article -->
+  <article class="flex-article2" *ngFor="let breakfast of topBreakfastResult.slice(0,5)">
+    <img [src]="breakfast.recipe.image" alt="" class="grid-img">
+    <h2 class="split-article"> {{breakfast.recipe.label}} </h2>
+  </article>
+
+
+</section>
+<!-- BREAKFAST -->
+
+<!-- LUNCH -->
+<section class="right-heading">
+  <h2 class="split-article cusine-header">Lunch</h2>
+</section>
+
+<!-- Loop section -->
+<section class="breakfast">
+
+  <!-- Loop article -->
+  <article class="flex-article2" *ngFor="let lunch of topLunchResult.slice(0,5)">
+    <img [src]="lunch.recipe.image" alt="" class="grid-img">
+    <h2 class="split-article"> {{lunch.recipe.label}} </h2>
+  </article>
+</section>
+<!-- LUNCH -->
+
+
+<!-- DINNER -->
+<section class="right-heading">
+  <h2 class="split-article cusine-header">Dinner</h2>
+</section>
+
+<!-- Loop section -->
+<section class="breakfast">
+
+  <!-- Loop article -->
+  <article class="flex-article2" *ngFor="let dinner of topDinnerResult.slice(0,5)">
+    <img [src]="dinner.recipe.image" alt="" class="grid-img">
+    <h2 class="split-article"> {{dinner.recipe.label}} </h2>
+  </article>
+
+
+</section>
+<!-- DINNER -->
+
+<!-- DESSERT -->
+<section class="right-heading">
+  <h2 class="split- cusine-header">Dessert</h2>
+</section>
+
+<!-- Loop section -->
+<section class="breakfast">
+
+  <!-- Loop article -->
+  <article class="flex-article2" *ngFor="let dessert of topDessertResult.slice(0,5)">
+    <img [src]="dessert.recipe.image" alt="" class="grid-img">
+    <h2 class="split-article "> {{dessert.recipe.label}} </h2>
+  </article>
+
+
+</section>
+<!-- DESSERT -->
+
+<!--footer starts from here-->
+<footer>
+  <div class="footer-container">
+      <div class="row">
+  
+        <div class="col-sm-6 col-md-3 item"> 
+          <h1 class="logo">Bonum<span class="dot">.</span> </h1>
+        </div>
+          <div class="col-sm-6 col-md-3 item">
+              <h3>Cuisines</h3>
+              <ul>
+                  <li><a href="#" class="footer-links">Asian</a></li>
+                  <li><a href="#" class="footer-links">American</a></li>
+                  <li><a href="#" class="footer-links">British</a></li>
+              </ul>
+          </div>
+  
+          <div class="col-sm-6 col-md-3 item">
+              <h3>Diets</h3>
+              <ul>
+                  <li><a href="#" class="footer-links">Keto</a></li>
+                  <li><a href="#" class="footer-links">Soy free</a></li>
+                  <li><a href="#" class="footer-links">Gluten free</a></li>
+              </ul>
+          </div>
+  
+          <div class="col-sm-6 col-md-3 item">
+            <h3>Meal types</h3>
+            <ul>
+                <li><a href="#" class="footer-links">Breakfast</a></li>
+                <li><a href="#" class="footer-links">Lunch</a></li>
+                <li><a href="#" class="footer-links">Dinner</a></li>
+            </ul>
+        </div>
+  
+        <div class="col-sm-6 col-md-3 item">
+            <h3>Kitchens</h3>
+            <ul>
+                <li><a href="#" class="footer-links">Italian</a></li>
+                <li><a href="#" class="footer-links">French</a></li>
+                <li><a href="#" class="footer-links">Chinese</a></li>
+            </ul>
+        </div>
+  
+      </div>
+      
+  </div>
+  </footer>
+
+    
+
+    
+    
+    

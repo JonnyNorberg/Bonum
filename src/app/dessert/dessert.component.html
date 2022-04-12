@@ -1,0 +1,78 @@
+
+<!-- HERO -->
+<section class="dessert-hero">
+    <div class="search">
+      <input type="text" class="searchTerm" placeholder="Find something delicious!">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
+    </div>
+    </section>
+
+<section class="flexcont">
+    <!--article loop-->
+     <div class="flex-article" *ngFor="let dessert of topDessertResult">
+       
+       <img [src]="dessert.recipe.image" alt="" class="grid-img">
+       <h2 class="cardH2"> {{dessert.recipe.label}} </h2>
+      
+       <p> {{dessert.recipe.health}} </p>
+       <p> {{dessert.recipe.diet}} </p>
+       <i class="fa-solid fa-star"></i>
+       <i class="fa-solid fa-star"></i>
+       <i class="fa-solid fa-star"></i>
+     </div>
+    <!--article loop-->
+    </section>
+
+    
+<!--footer starts from here-->
+<footer>
+  <div class="footer-container">
+      <div class="row">
+  
+        <div class="col-sm-6 col-md-3 item"> 
+          <h1 class="logo">Bonum<span class="dot">.</span> </h1>
+        </div>
+          <div class="col-sm-6 col-md-3 item">
+              <h3>Cuisines</h3>
+              <ul>
+                  <li><a href="#" class="footer-links">Asian</a></li>
+                  <li><a href="#" class="footer-links">American</a></li>
+                  <li><a href="#" class="footer-links">British</a></li>
+              </ul>
+          </div>
+  
+          <div class="col-sm-6 col-md-3 item">
+              <h3>Diets</h3>
+              <ul>
+                  <li><a href="#" class="footer-links">Keto</a></li>
+                  <li><a href="#" class="footer-links">Soy free</a></li>
+                  <li><a href="#" class="footer-links">Gluten free</a></li>
+              </ul>
+          </div>
+  
+          <div class="col-sm-6 col-md-3 item">
+            <h3>Meal types</h3>
+            <ul>
+                <li><a href="#" class="footer-links">Breakfast</a></li>
+                <li><a href="#" class="footer-links">Lunch</a></li>
+                <li><a href="#" class="footer-links">Dinner</a></li>
+            </ul>
+        </div>
+  
+        <div class="col-sm-6 col-md-3 item">
+            <h3>Kitchens</h3>
+            <ul>
+                <li><a href="#" class="footer-links">Italian</a></li>
+                <li><a href="#" class="footer-links">French</a></li>
+                <li><a href="#" class="footer-links">Chinese</a></li>
+            </ul>
+        </div>
+  
+      </div>
+      
+  </div>
+  </footer>
+    
+    
